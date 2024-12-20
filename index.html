@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Yael Family Legacy</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling for the family members' clickable boxes */
+        .family-box {
+            background-color: #f8f8f8;
+            border: 2px solid #d4af37;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .family-box:hover {
+            transform: scale(1.05);
+        }
+
+        .family-box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .family-box h4 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #3c5c41;
+        }
+
+        /* Hidden detailed info */
+        .more-info {
+            display: none;
+            padding: 15px;
+            margin-top: 10px;
+            background-color: #d4af37;
+            color: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .active .more-info {
+            display: block;
+        }
+
+        /* History Section Styling */
+        #history {
+            background-color: #f4f4f4;
+            padding: 40px;
+            margin-top: 30px;
+        }
+
+        #history h2 {
+            font-size: 2.5em;
+            color: #d4af37;
+            text-align: center;
+        }
+
+        #history p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* About Section Styling */
+        #about {
+            background-color: #fff;
+            padding: 40px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            color: #3c5c41;
+        }
+
+        #about p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>The Yael Family Legacy</h1>
+</header>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="#about">About</a>
+    <a href="#history">History</a>
+    <a href="#new-generation">New Generation</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- About Section -->
+<section id="about">
+    <h2>About The Yael Family</h2>
+    <p>The Yael family is one of the most prestigious families in the world today. Their legacy of wealth, influence, and social responsibility has been built over decades, and they remain committed to shaping the future through innovation, education, and philanthropy. With a rich history rooted in both business and cultural contributions, the Yaels are celebrated not only for their success but also for their sense of responsibility and leadership in modern society.</p>
+</section>
+
+<!-- History Section -->
+<section id="history">
+    <h2>The Legacy: Over a Century of Success</h2>
+    <p>The Yael family's rise to prominence began in 1890, when their patriarch, Elias Yael, a visionary entrepreneur, founded what would become a multi-generational empire. Elias, a skilled businessman with a deep understanding of the African market, made his fortune in mining, which formed the foundation for the family's wealth. His ability to navigate the complexities of the early African economic landscape and make strategic investments set the stage for the family's success for generations to come.</p>
+    
+    <p>By the early 20th century, the Yaels had expanded their interests into various industries, including agriculture, real estate, and eventually energy. Under the leadership of Elias' sons, the Yael family diversified their wealth into numerous international markets, particularly focusing on Africa and the emerging economies of South America. Throughout the years, the Yaels have used their resources to fund both business ventures and philanthropic projects aimed at improving the lives of those in the communities where they operate.</p>
+
+    <p>The family’s commitment to education and empowerment, especially for women and children, became a cornerstone of their philanthropic endeavors. By the mid-20th century, the Yaels had built schools, hospitals, and orphanages in some of the most underserved areas of Africa, earning them recognition as leaders in social impact alongside their business prowess.</p>
+
+    <p>Today, the Yael family is one of the wealthiest and most influential families in the world. With assets spanning multiple continents, they have become a beacon for corporate responsibility, sustainable business practices, and philanthropic contributions to global issues. Despite their vast wealth, the Yaels maintain a level of privacy and modesty, often avoiding public displays of affluence and preferring to quietly work behind the scenes to make a difference.</p>
+
+    <p>The family's legacy continues to thrive under the leadership of the younger generation, who are combining the lessons of their forefathers with a modern approach to business, technology, and global sustainability. The Yael family’s commitment to social causes, education, and renewable energy makes them a leading force in shaping a better world for future generations.</p>
+</section>
+
+<!-- New Generation Section -->
+<section id="new-generation">
+    <h2>Meet the New Generation</h2>
+    <div class="new-generation">
+        <!-- Richard Yael -->
+        <div class="family-box" onclick="toggleInfo(this)">
+            <img src="IMG_0217 (1).jpeg" alt="Richard Yael">
+            <h4>Richard Yael</h4>
+            <div class="more-info">
+                <p><strong>Background:</strong> Richard Yael, one of the twin sons of Henry Yael, is currently studying at Mount Kenya Academy after transitioning from the prestigious St. Paul Elite School. He is a natural leader, admired by peers and educators alike for his intellect and keen interest in environmental conservation.</p>
+                <p><strong>Interests:</strong> Richard is deeply passionate about environmental causes, focusing on sustainable development and conservation efforts, particularly in Africa. He envisions contributing to the development of renewable energy initiatives and green technologies that will positively impact the continent.</p>
+                <p><strong>Ambitions:</strong> Richard plans to pursue a career that combines his family’s legacy of business acumen with his passion for sustainable development. His goal is to spearhead the Yael family’s future investments in green energy and eco-friendly projects globally.</p>
+            </div>
+        </div>
+
+        <!-- Nicholas Yael -->
+        <div class="family-box" onclick="toggleInfo(this)">
+            <img src="2041334f-d6bc-4010-9778-dcf9dfee9503 (1).jpeg" alt="Nicholas Yael">
+            <h4>Nicholas Yael</h4>
+            <div class="more-info">
+                <p><strong>Background:</strong> Nicholas Yael, the twin brother of Richard, is a dynamic and charismatic student at St. Paul Elite School. Unlike his twin, Nicholas thrives in creative fields, particularly media and entertainment, where he’s gaining recognition for his innovative ideas.</p>
+                <p><strong>Interests:</strong> Nicholas is passionate about the evolving world of media and entertainment. He is exploring the intersection of digital media and storytelling, with a focus on creating platforms that combine both traditional media and modern technologies to reach wider audiences.</p>
+                <p><strong>Ambitions:</strong> Nicholas aims to revolutionize the Yael family’s involvement in entertainment, particularly in Africa. By modernizing their existing ventures, he plans to bring new, cutting-edge entertainment and media platforms to the African market, paving the way for a cultural renaissance through technology and media.</p>
+            </div>
+        </div>
+
+        <!-- Chelsea Leah -->
+        <div class="family-box" onclick="toggleInfo(this)">
+            <img src="unnamed.jpg" alt="Chelsea Leah">
+            <h4>Chelsea Leah</h4>
+            <div class="more-info">
+                <p><strong>Background:</strong> Chelsea Leah, the eldest child of Henry Yael and his first wife, has carved out a remarkable career in law enforcement. She works as a junior detective with the New York Police Department (NYPD), where she is respected for her fearlessness, determination, and keen investigative mind.</p>
+                <p><strong>Interests:</strong> Chelsea has a deep passion for justice and societal issues, particularly in fighting corruption and supporting underrepresented communities. She regularly engages in community outreach programs and advocates for fair policing.</p>
+                <p><strong>Ambitions:</strong> Chelsea aspires to continue advancing within law enforcement, potentially taking on higher leadership roles in the future. She hopes to use her position to influence positive change in policing methods, ensuring that justice is served equitably and responsibly.</p>
+            </div>
+        </div>
+
+        <!-- Ruby Leah -->
+        <div class="family-box" onclick="toggleInfo(this)">
+            <img src="IMG_0222 (1).jpeg" alt="Ruby Leah">
+            <h4>Ruby Leah</h4>
+            <div class="more-info">
+                <p><strong>Background:</strong> Ruby Leah, cousin to Richard and Nicholas Yael, is a highly skilled technologist with a background in artificial intelligence. She co-founded a leading AI healthcare startup, revolutionizing diagnostic tools and medical research for rare diseases.</p>
+                <p><strong>Interests:</strong> Ruby is dedicated to advancing healthcare through technology. She believes that AI holds the potential to drastically improve diagnostics, particularly for underserved populations. Her company focuses on creating accessible, affordable diagnostic systems that use AI to identify rare diseases at an early stage.</p>
+                <p><strong>Ambitions:</strong> Ruby plans to expand her AI healthcare startup globally, with a special focus on Africa. She aims to leverage her technological expertise to transform healthcare accessibility and improve patient outcomes worldwide.</p>
+            </div>
+        </div>
+
+        <!-- Fred Yael -->
+        <div class="family-box" onclick="toggleInfo(this)">
+            <img src="IMG_0454 (1).jpeg" alt="Fred Yael">
+            <h4>Fred Yael</h4>
+            <div class="more-info">
+                <p><strong>Background:</strong> Fred Yael, a cousin to the Yael siblings, is a dynamic entrepreneur with a sharp focus on emerging markets, particularly in Africa and South America. He has built a strong reputation as an investor in renewable energy, clean water initiatives, and sustainable agriculture.</p>
+                <p><strong>Interests:</strong> Fred is passionate about sustainable development and seeks out business opportunities that prioritize environmental responsibility. His portfolio includes investments in clean energy projects, water purification systems, and technologies aimed at enhancing food security.</p>
+                <p><strong>Ambitions:</strong> Fred plans to continue driving the Yael family's investments in Africa and South America, focusing on renewable energy and sustainable agriculture. He aims to create a lasting impact in these regions by addressing critical challenges like climate change and food insecurity through innovation and entrepreneurship.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 The Yael Family Legacy | All Rights Reserved</p>
+    <a href="#contact">Contact Us</a>
+</footer>
+
+<script>
+    // JavaScript function to toggle additional information
+    function toggleInfo(element) {
+        // Toggle the "active" class on the clicked family-box to show/hide details
+        element.classList.toggle("active");
+    }
+</script>
+
+</body>
+</html>
+
+
